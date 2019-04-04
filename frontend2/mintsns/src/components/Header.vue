@@ -1,15 +1,18 @@
 <template>
   <header id="header" role="banner">
     <h1><img class="logo" src="../assets/images/header_logo.png" alt="mintsns" /></h1>
-    <img class="user-icon" src="">
+    <img class="user-icon" :src="user.thumbnailUrl">
   </header>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from "vue-property-decorator";
+import {mapState} from "vuex";
 
 @Component({
-
+  computed: {
+    ...mapState({ user: state => state.user })
+  },
 })
 export default class Header extends Vue {}
 </script>

@@ -1,4 +1,10 @@
-import shop from "../../api/shop";
+import shop from "../../../api/shop";
+import {action, actionCreatorFactory, combineAction} from "vuex-typescript-fsa/lib";
+import {setUserAction} from "@/store/modules/user/action";
+
+
+
+
 
 // initial state
 // shape: [{ id, quantity }]
@@ -32,6 +38,11 @@ const getters = {
 
 // actions
 const actions = {
+  ...combineAction(
+    action(setUserAction, (context, action) => {
+      context.commit(action);
+    })
+  ),
   setUser({ state, commit }, user: { id: number; name: string; thumbnailUrl: string }) {
       commit("setUser", user);
   },

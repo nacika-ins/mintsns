@@ -4,7 +4,7 @@ import VuexORM from "@vuex-orm/core";
 import User from "../model/User";
 import cart from './modules/cart'
 import products from './modules/products'
-import user from "@/store/modules/user";
+import user from "@/store/modules/user/user";
 
 Vue.use(Vuex);
 
