@@ -2457,7 +2457,7 @@ clone-deep@^2.0.1:
     kind-of "^6.0.0"
     shallow-clone "^1.0.0"
 
-clone@2.x:
+clone@2.x, clone@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/clone/-/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
   integrity sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
@@ -7188,6 +7188,11 @@ normalize-url@^3.0.0:
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
   integrity sha512-U+JJi7duF1o+u2pynbp2zXDW2/PADgC30f0GsHZtRh+HOcXHnw137TrNlyxxRvWW5fjKd3bcLHPxofWuCjaeZg==
 
+normalizr@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/normalizr/-/normalizr-3.3.0.tgz#6f44b95e8bf2201845a9e551920c4e5861166d27"
+  integrity sha512-u8Us8Ms5KpY0mmNwML4OBxNKvlmSKeXfPBIXU9XmcejrZUjhIvUOd8RYBq62UL4JHxrcO4wqo2sL4s8B74Hadw==
+
 npm-bundled@^1.0.1:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/npm-bundled/-/npm-bundled-1.0.5.tgz#3c1732b7ba936b3a10325aef616467c0ccbcc979"
@@ -8418,6 +8423,11 @@ redent@^1.0.0:
   dependencies:
     indent-string "^2.1.0"
     strip-indent "^1.0.1"
+
+redux-observable@^1.0.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/redux-observable/-/redux-observable-1.1.0.tgz#323a8fe53e89fdb519be2807b55f08e21c13e6f1"
+  integrity sha512-G0nxgmTZwTK3Z3KoQIL8VQu9n0YCUwEP3wc3zxKQ8zAZm+iYkoZvBqAnBJfLi4EsD1E64KR4s4jFH/dFXpV9Og==
 
 regenerate-unicode-properties@^7.0.0:
   version "7.0.0"
@@ -10270,6 +10280,32 @@ vue@^2.5.21:
   version "2.5.21"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.21.tgz#3d33dcd03bb813912ce894a8303ab553699c4a85"
   integrity sha512-Aejvyyfhn0zjVeLvXd70h4hrE4zZDx1wfZqia6ekkobLmUZ+vNFQer53B4fu0EjWBSiqApxPejzkO1Znt3joxQ==
+
+vuex-module-decorators@^0.9.8:
+  version "0.9.8"
+  resolved "https://registry.yarnpkg.com/vuex-module-decorators/-/vuex-module-decorators-0.9.8.tgz#760c63fc5358fb2f3170a5428181a4549adc91ce"
+  integrity sha512-yyh9+0mO7NYZxw5BlXWNA/lHioVOUL0muDpJPL9ssAvje2PHQfFSOCSridK4vA3HasjyaGRtTPJKH7+7UCcpwg==
+
+vuex-observable-plugin@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/vuex-observable-plugin/-/vuex-observable-plugin-0.3.0.tgz#15f270573bce2c8c9dd4cb90448af760131d72c0"
+  integrity sha512-CW5+lixePlyN7cDBq42GjQkF1WMaEPn+kJO6hXIQe4szCJvViatW/9JWN5Xn/1NSvDPdkFnqYMyuRPG5RjL6kA==
+  dependencies:
+    clone "^2.1.2"
+    fast-deep-equal "^2.0.1"
+    redux-observable "^1.0.0"
+
+vuex-typescript-fsa@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/vuex-typescript-fsa/-/vuex-typescript-fsa-0.4.0.tgz#7b5f1e8a621cb0248a1aa32aabe6f8f99e83a1c5"
+  integrity sha512-fAYKVflcRkVlI+iJIpxDhlzgaUTSUdTPKOU5o1gSNhzYQlvhOxslAE4CIb6r6qFkbxnUKL0aXrH+tVrCz1X4Fw==
+  dependencies:
+    vuex "^3.0.1"
+
+vuex-typescript@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/vuex-typescript/-/vuex-typescript-3.0.2.tgz#d0b23acf7c046bce36ddfef756a7110d4551f9a9"
+  integrity sha512-0imJZMdUs60pNRPgESA+nAR+q4qK0G9odoq3g7BE8AlCJ+61NdYicoyrVSTIb5oc79+R6PFLWbzf25bO0GxZtQ==
 
 vuex@^3.0.1:
   version "3.0.1"

@@ -1,27 +1,36 @@
-<header id="header" role="banner">
-  <h1><img class="logo" src="images/header_logo.png" alt="1"/></h1>
-
-  <img class="user-icon" src="">
-
-  <div class="notification-button">0</div>
-
-  <div class="navigation">
-
-    <div #target class="navigation-rotate">
-      <div class="navigation-item" *ngFor="let stream of viewStreams">{{stream.name}}</div>
-    </div>
-
-    <div class="navigation-cover-left-1"></div>
-    <div class="navigation-cover-left-2"></div>
-    <div class="navigation-cover-right-1"></div>
-    <div class="navigation-cover-right-2"></div>
-
-    <div class="navigation-arrow-left" (click)="onClickPrevStream()"><</div>
-    <div class="navigation-arrow-right" (click)="onClickNextStream()">></div>
-
+<template>
+  <div>
+    <Header />
+    <router-view></router-view>
   </div>
+</template>
 
-</header>
-<div class="header-margin"></div>
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import { mapGetters, mapMutations, mapState } from "vuex";
+import Header from "@/components/Header.vue";
 
-<router-view></router-view>
+@Component({
+  components: {
+    Header
+  },
+  computed: {
+    ...mapState({ user: state => state.user.setUser })
+  },
+  ...mapGetters("cart", {
+    products: "cartProducts",
+    total: "cartTotalPrice"
+  }),
+  methods: {
+    ...mapMutations(["increment"]),
+    checkout(products) {
+      this.$store.dispatch("cart/checkout", products);
+    },
+    onClickPrevStream() {},
+    onClickNextStream() {}
+  }
+})
+export default class StreamLayout extends Vue {}
+</script>
+
+<style scoped lang="scss"></style>

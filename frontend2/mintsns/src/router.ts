@@ -16,19 +16,17 @@ export default new Router({
     {
       path: "/about",
       name: "about",
-      component: () =>
-        import("./views/About.vue")
+      component: () => import("./views/About.vue")
     },
     {
       path: "/stream",
       name: "stream",
-      component: () =>
-        import("./views/StreamLayout.vue"),
+      component: () => import("./views/StreamLayout.vue"),
       children: [
-          {
-              path: '/',
-              component: () => import("./views/stream/Stream.vue"),
-          }
+        {
+          path: "/",
+          component: () => import("./views/stream/Main.vue")
+        }
       ]
     }
   ]

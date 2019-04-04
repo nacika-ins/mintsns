@@ -1,0 +1,796 @@
+/*! Stylesheet for MintSNS by YukiTANABE | pm8.jp */
+/** MEMO
+ * (Default = 16px)
+ *  6px =  .3750rem
+ *  8px =  .5000rem
+ * 10px =  .6250rem
+ * 12px =  .7500rem
+ * 13px =  .8125rem
+ * 14px =  .8750rem
+ * 15px =  .9375rem
+ * 16px = 1.0000rem [default]
+ * 17px = 1.0625rem
+ * 18px = 1.1250rem
+ * 20px = 1.2500rem
+ * 21px = 1.3125rem
+ * 22px = 1.3750rem
+ * 24px = 1.5000rem
+ * 26px = 1.6250rem
+ * 28px = 1.7500rem
+ * 30px = 1.8750rem
+ * 32px = 2.0000rem
+ * 34px = 2.1250rem
+ * 36px = 2.2500rem
+ * 40px = 2.5000rem
+ * 50px = 3.1250rem
+ **/
+:root {
+  font-size: 16px;
+}
+html {
+  background-color: #eef3ee;
+  color: #333933;
+  font-size: 16px;
+}
+.cf::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+i.fa {
+  margin-right: 0.375rem;
+  overflow: hidden;
+}
+a {
+  font-size: 0.75rem;
+  color: #4990e4;
+  text-decoration: none;
+}
+a:hover {
+  color: #80adcb;
+}
+a[role=button] {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+[role=button] {
+  background-color: transparent;
+  border: 1px solid #dde3dd;
+  color: #0f9d58;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+[role=button]:hover {
+  background-color: #0f9d58;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+[role=button] i.fa {
+  margin: 0.25rem 1rem;
+}
+.clearfix {
+  clear: both;
+}
+label.label-checkbox {
+  cursor: pointer;
+}
+label.label-checkbox input[type='checkbox'] {
+  vertical-align: 1px;
+}
+button.btn[type='button'], button.btn[type='submit'] {
+  border: 1px solid #8cb98c;
+  background-color: #8cb98c;
+  border-radius: 2px;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 100;
+  padding: 5px 10px;
+  margin: 0px 0px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+  cursor: pointer;
+  transition: 200ms 10ms;
+}
+button.btn[type='button']:focus, button.btn[type='submit']:focus {
+  border: 1px solid #208a20;
+}
+button.btn[type='button']:active, button.btn[type='submit']:active {
+  border: 1px solid #547254;
+  background-color: #547254;
+}
+button.btn[type='button'][disabled], button.btn[type='submit'][disabled] {
+  background-color: rgba(0, 0, 0, 0.02);
+  color: #c3c8c3;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  box-shadow: none;
+}
+post, comment, my-stream, post-input, zone-editor {
+  display: block;
+}
+zone-editor .stream-item-label {
+  width: 170px;
+  float: left;
+}
+zone-editor .stream-item-anchor {
+  vertical-align: 1px;
+  font-size: 0.75rem;
+  color: #4990e4;
+  text-decoration: none;
+}
+zone-editor .stream-item-span {
+  font-size: 0.75rem;
+  color: darkgray;
+}
+zone-editor .stream-item-anchor:hover {
+  color: #80adcb;
+}
+zone-editor .remove-stream {
+  float: right;
+  margin-right: 20px;
+}
+zone-editor li {
+  clear: both;
+  margin-bottom: 10px;
+}
+zone-detail-editor .zone-detail-or-condition-margin {
+  color: #c3c3c3;
+  text-align: center;
+  font-size: 0.625rem;
+  margin-top: -4px;
+  margin-bottom: -2px;
+}
+zone-detail-editor .zone-detail-or-condition-margin .text {
+  margin-top: 0px;
+  margin-bottom: -3px;
+}
+zone-detail-editor .zone-detail-or-condition-item {
+  background-color: #ececec;
+  border: 1px solid #c3c3c3;
+  padding: 10px;
+  font-size: 0.75rem;
+  position: relative;
+}
+zone-detail-editor .zone-detail-or-condition-item .zone-detail-or-condition-item-close-button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 13px;
+  height: 17px;
+  border: 1px solid #c3c3c3;
+  padding: 0px;
+  font-size: 0.625rem;
+  padding-left: 5px;
+  border-right: 0;
+  border-top: 0;
+  background-color: white;
+  cursor: pointer;
+}
+zone-detail-editor .zone-detail-or-condition-item .zone-detail-or-condition-item-close-button:hover {
+  background-color: #d2d2d2;
+}
+zone-detail-editor .zone-detail-or-condition-item .zone-detail-or-condition-item-description {
+  color: gray;
+  margin-bottom: 7px;
+  margin-left: 1px;
+}
+zone-detail-editor .zone-detail-or-condition-item .zone-detail-condition-item + .zone-detail-condition-item {
+  margin-top: 3px;
+}
+zone-detail-editor .zone-detail-or-condition-item button.minus, zone-detail-editor .zone-detail-or-condition-item button.plus {
+  width: 22px;
+  padding: 0px;
+  height: 21px;
+  font-size: 0.8125rem;
+}
+zone-detail-editor .zone-detail-or-condition-item input.tag {
+  width: 226px;
+}
+zone-detail-editor .zone-detail-or-condition-item input.value {
+  width: 60px;
+}
+zone-detail-editor .zone-detail-or-condition-item input.value[disabled] {
+  background-color: #efefef;
+  border: 1px solid #ccc;
+  color: #c1c1c1;
+}
+zone-detail-editor .zone-detail-or-condition-item select {
+  vertical-align: -2px;
+}
+.modal hr {
+  border: none;
+  border-top: 1px solid #dcdcdc;
+}
+.modal ul {
+  padding-left: 0px;
+  list-style-type: none;
+}
+.modal .modal-header {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 1rem;
+  height: 20px;
+}
+.modal .modal-description {
+  font-size: 0.75rem;
+  margin-top: 5px;
+  margin-left: 20px;
+  height: 20px;
+}
+.modal .modal-body {
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 0.8125rem;
+  border: 1px solid gray;
+  padding: 10px;
+  margin-right: 20px;
+  height: 216px;
+  overflow: scroll;
+}
+.modal .modal-buttons {
+  position: absolute;
+  bottom: 10px;
+  float: right;
+  right: 20px;
+}
+.modal .modal-cover {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 9999px;
+  height: 9999px;
+  background-color: rgba(0, 0, 0, 0.12);
+  z-index: 10000;
+}
+.modal .modal-footer {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.modal .modal-window {
+  position: fixed;
+  left: 50%;
+  top: 277px;
+  width: 530px;
+  height: 364px;
+  margin-left: -265px;
+  transform-origin: 0px 0px 0px;
+  background-color: white;
+  z-index: 10000;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+.modal .modal-window .modal-close-button {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  font-size: 1rem;
+  color: gray;
+  cursor: pointer;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.wrap {
+  margin: 0 auto;
+  width: 90%;
+}
+textarea {
+  border: 1px solid #dde3dd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+input:focus, textarea:focus {
+  outline: none;
+}
+
+
+header[role=banner] {
+  background-color: white;
+  border-bottom: 1px solid #dde3dd;
+  padding: 5px;
+  height: 30px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  width: 100%;
+}
+header[role=banner] h1 {
+  text-align: left;
+  margin: 0px;
+  font-size: 1.125rem;
+  color: #8cb98c;
+}
+header[role=banner] h1 .logo {
+  height: 2rem;
+  position: relative;
+  z-index: 3000;
+}
+header[role=banner] .user-icon {
+  position: absolute;
+  top: 4px;
+  right: 21px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 3000;
+}
+header[role=banner] .notification-button {
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 65px;
+  width: 16px;
+  height: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #eef3ee;
+  font-size: 0.75rem;
+  text-align: center;
+  font-family: monospace;
+  color: #b7b7b7;
+  z-index: 3000;
+}
+header[role=banner] .notification-button.active {
+  color: white;
+  background-color: #f5544b;
+}
+header[role=banner] .navigation {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -350px;
+  width: 700px;
+  padding-left: 103px;
+}
+header[role=banner] .navigation .navigation-item {
+  float: left;
+  margin-right: 10px;
+  width: 90px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.8125rem;
+  color: #1fb3a2;
+  overflow: hidden;
+  white-space: nowrap;
+}
+header[role=banner] .navigation .navigation-cover-left-1 {
+  display: block;
+  top: 0;
+  left: -36px;
+  width: 260px;
+  height: 40px;
+  z-index: 1001;
+  position: absolute;
+  background-color: #fff;
+}
+header[role=banner] .navigation .navigation-cover-left-2 {
+  display: block;
+  top: 0;
+  left: 224px;
+  width: 100px;
+  height: 40px;
+  z-index: 1001;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(rgba(255, 255, 255, 0)));
+}
+header[role=banner] .navigation .navigation-cover-right-1 {
+  display: block;
+  top: 0;
+  right: 62px;
+  width: 270px;
+  height: 40px;
+  z-index: 1001;
+  position: absolute;
+  background-color: #fff;
+}
+header[role=banner] .navigation .navigation-cover-right-2 {
+  display: block;
+  top: 0;
+  right: 332px;
+  width: 100px;
+  height: 40px;
+  z-index: 1001;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(#fff));
+}
+header[role=banner] .navigation .navigation-arrow-left {
+  position: absolute;
+  top: -1px;
+  left: 155px;
+  color: #5ec8bc;
+  font-size: 0.75rem;
+  z-index: 1002;
+  font-family: sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px 60px;
+}
+header[role=banner] .navigation .navigation-arrow-right {
+  position: absolute;
+  top: -1px;
+  right: 263px;
+  color: #5ec8bc;
+  font-size: 0.75rem;
+  z-index: 1002;
+  font-family: sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px 60px;
+}
+header[role=banner] .navigation .navigation-arrow-left:hover, header[role=banner] .navigation .navigation-arrow-right:hover {
+  color: #68e8d6;
+  font-weight: 700;
+}
+.header-margin {
+  margin-top: 40px;
+}
+post-input {
+  max-width: 569px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding-top: 0px;
+  border-top: 10px solid #eef3ee;
+  font-size: 0.8125rem;
+  display: block;
+  position: relative;
+  z-index: 1000;
+}
+post-input textarea {
+  width: 100%;
+  padding-left: 55px;
+  padding-top: 19px;
+  height: 60px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  resize: none;
+}
+post-input .zone-select {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  height: 29px;
+  background-color: #fff;
+  width: 567px;
+  border: 1px solid #dde3dd;
+  border-top: 0;
+}
+post-input .zone-select .zone-item {
+  display: inline-table;
+  border: 1px solid #5ec8bc;
+  padding: 0 5px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-left: 6px;
+  font-size: 0.75rem;
+  background-color: #5ec8bc;
+  color: white;
+  font-family: monospace;
+  cursor: pointer;
+}
+post-input .zone-select .zone-item + .zone-item {
+  margin-left: 2px;
+}
+post-input .zone-select .zone-item.public {
+  background-color: #9cc747;
+  border: 1px solid #9cc747;
+}
+post-input .zone-select .zone-item.your-zone {
+  background-color: #76b1e1;
+  border: 1px solid #76b1e1;
+}
+post-input .zone-select .zone-plus {
+  float: right;
+  margin-right: 2px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1aa160;
+  margin-top: 1px;
+  cursor: pointer;
+  padding: 0 5px;
+  font-family: sans-serif;
+}
+post-input .user-icon {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  border-radius: 5px;
+}
+post-input .buttons {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  clear: both;
+  float: right;
+}
+post-input .input-button {
+  border-radius: 5px;
+  cursor: pointer;
+  padding-right: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+post-input .input-button i {
+  vertical-align: -5px;
+  margin-right: 0 !important;
+}
+post-input .input-button.active {
+  background-color: white;
+}
+post-input .input-button.active:hover {
+  background-color: #0f9d58;
+}
+#console {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+#console input {
+  font-size: 0.75rem;
+  padding: 0.25rem;
+  width: 100%;
+}
+#help li {
+  padding: 0.5rem 0;
+}
+#help li [role=button] {
+  padding: 0.5rem 1rem;
+}
+#main[role=main] {
+  position: absolute;
+  top: 196px;
+  margin: 0 auto;
+  width: 100%;
+}
+#main[role=main] post {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#main[role=main] article:not(.img) section.img {
+  display: none;
+}
+#main[role=main] article.post {
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #dde3dd;
+  box-sizing: border-box;
+  margin: 1rem;
+}
+#main[role=main] article.post .buttons {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#main[role=main] article.post .buttons .comment {
+  border: 1px solid #dde3dd;
+  padding: 0px 10px;
+  height: 23px;
+  display: block;
+  padding-top: 4px;
+  width: 410px;
+  color: #bdbdbd;
+  margin-top: -4px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+#main[role=main] article.post .buttons .share, #main[role=main] article.post .buttons .pachun {
+  height: 23px;
+  margin-top: -4px;
+  padding-top: 4px;
+  display: block;
+}
+#main[role=main] article.post .buttons > * {
+  float: left;
+}
+#main[role=main] article.post .buttons > *:not(:first-of-type) {
+  margin-left: 0.5rem;
+}
+#main[role=main] article.post .comment-input {
+  padding: 8px 16px;
+  position: relative;
+  padding-bottom: 3px;
+}
+#main[role=main] article.post .comment-inputhas-comments {
+  border-top: 1px solid #dde3dd;
+}
+#main[role=main] article.post .comment-input img.ico {
+  border-radius: 5px;
+  height: 2rem;
+  width: 2rem;
+  margin-top: 6px;
+  position: absolute;
+  left: 21px;
+}
+#main[role=main] article.post .comment-input textarea.comment-textarea {
+  width: 449px;
+  height: 40px;
+  font-size: 0.8125rem;
+  padding: 5px;
+  height: 43px;
+  border-radius: 2px;
+  resize: none;
+  padding-left: 43px;
+}
+#main[role=main] article.post .comment-input .comment-button {
+  height: 30px;
+  font-size: 0.8125rem;
+  vertical-align: 16px;
+  margin-left: 5px;
+  width: 74px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#main[role=main] article.post .main {
+  padding: 1rem;
+}
+#main[role=main] article.post .main header {
+  position: relative;
+}
+#main[role=main] article.post .main header .menu.fa {
+  color: #9a9;
+  cursor: pointer;
+  float: right;
+  margin: 0;
+}
+#main[role=main] article.post .main header > nav {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 0 2px 1px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, .2);
+  display: none;
+  font-size: 0.75rem;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+}
+#main[role=main] article.post .main header > nav.active {
+  display: block;
+}
+#main[role=main] article.post .main header > nav ul li {
+  border-bottom: 1px solid #dde3dd;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+}
+#main[role=main] article.post .main header > nav ul li:last-of-type {
+  border-bottom: none;
+}
+#main[role=main] article.post .main header > nav ul li:hover {
+  background-color: #eef3ee;
+}
+#main[role=main] article.post .main header img.ico {
+  border-radius: 5px;
+  float: left;
+  height: 2.25rem;
+  width: 2.25rem;
+}
+#main[role=main] article.post .main header .info {
+  float: left;
+  margin-left: 1rem;
+  margin-top: -0.2rem;
+}
+#main[role=main] article.post .main header .info h2 {
+  font-size: 0.875rem;
+  margin: 0;
+  margin-bottom: -0.2rem;
+}
+#main[role=main] article.post .main header .info time {
+  color: #cdc;
+  font-size: 0.75rem;
+}
+#main[role=main] article.post .main header .info small {
+  color: #9a9;
+  margin-right: 0.5rem;
+}
+#main[role=main] article.post .main section.detail p {
+  font-size: 0.8125rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0.2rem;
+}
+#main[role=main] article.post .main section.detail section.img {
+  margin-bottom: 0.5rem;
+}
+#main[role=main] article.post .main section.detail section.img img {
+  float: left;
+  max-height: 250px;
+  max-width: 100%;
+}
+#main[role=main] article.post .main div.aside .pachun[role=button] {
+  float: right;
+}
+#main[role=main] article.post .comments {
+  background-color: #f3f9f3;
+  border-top: 1px solid #dde3dd;
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+#main[role=main] article.post .comments aside.cf {
+  position: absolute;
+  top: 1.25rem;
+  right: 0px;
+  width: auto;
+}
+#main[role=main] article.post .comments > comment > article aside, #main[role=main] article.post .comments section.input {
+  bottom: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 0 0.5rem 66px;
+  width: 100%;
+}
+#main[role=main] article.post .comments > comment > article {
+  position: relative;
+  padding-top: 1rem;
+}
+#main[role=main] article.post .comments > comment > article:not(:first-of-type) {
+  border-top: 1px solid #dde3dd;
+}
+#main[role=main] article.post .comments > comment > article:not(:last-of-type) {
+  padding-bottom: 1rem;
+}
+#main[role=main] article.post .comments > comment > article header img.ico {
+  border-radius: 5px;
+  float: left;
+  height: 1.75rem;
+  width: 1.75rem;
+}
+#main[role=main] article.post .comments > comment > article section.detail, #main[role=main] article.post .comments > comment > article aside, #main[role=main] article.post .comments > comment > article section.input {
+  position: static;
+}
+#main[role=main] article.post .comments > comment > article section.detail {
+  top: 1rem;
+  margin-left: 2.5rem;
+  margin-top: -2.1rem;
+  width: auto;
+  padding-bottom: 0.8rem;
+}
+#main[role=main] article.post .comments > comment > article section.detail h2 {
+  display: inline-block;
+  font-size: 0.875rem;
+  margin: 0 0.5rem 0 0;
+}
+#main[role=main] article.post .comments > comment > article section.detail time {
+  color: #cdc;
+  font-size: 0.75rem;
+}
+#main[role=main] article.post .comments > comment > article section.detail p {
+  font-size: 0.8125rem;
+  margin: 0.1rem 0;
+}
+#main[role=main] article.post .comments > comment > article section.detail section.img img {
+  max-height: 200px;
+  max-width: 100%;
+}
+#main[role=main] article.post .comments .input {
+  position: relative;
+}
+#main[role=main] article.post .comments .input textarea {
+  padding-right: 2.5rem;
+  width: 100%;
+}
+#main[role=main] article.post .comments .input .fa.fa-camera {
+  bottom: 1rem;
+  color: #dde3dd;
+  cursor: pointer;
+  position: absolute;
+  right: 0.5rem;
+}
